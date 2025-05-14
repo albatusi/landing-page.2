@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explora Mundo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primario: #2170b9;
+      --color-secundario: #f4a261;
+      --color-fondo: #fefae0;
+      --color-texto: #1d3557;
+    }
+
+    body {
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
+
+    .navbar {
+      background-color: var(--color-primario);
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .navbar a:hover {
+      color: var(--color-secundario) !important;
+    }
+
+    .btn-custom {
+      background-color: var(--color-secundario);
+      color: white;
+    }
+
+    .btn-custom:hover {
+      background-color: #e76f51;
+    }
+
+    footer {
+      background-color: var(--color-primario);
+      color: white;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(28, 113, 146, 0.966);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">🌍 Explora Mundo</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="text-center py-5 bg-white">
+    <div class="container">
+      <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Avión" width="80" class="mb-4" />
+      <h1 class="display-5 fw-bold">Descubre el mundo con nosotros</h1>
+      <p class="lead">Viajes inolvidables, destinos soñados, experiencias únicas.</p>
+    </div>
+  </section>
+
+  
+  <!-- GRID DE CARACTERÍSTICAS -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4 d-grid">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title">🌴 Destinos Exóticos</h5>
+              <p class="card-text">Explora playas, selvas y ciudades llenas de historia alrededor del mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-grid">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title">💸 Ofertas Exclusivas</h5>
+              <p class="card-text">Aprovecha promociones por tiempo limitado y descuentos especiales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-grid">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5 class="card-title">🕐 Soporte 24/7</h5>
+              <p class="card-text">Estamos contigo antes, durante y después de tu viaje.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="mb-4 text-center">Contáctanos</h2>
+          <form onsubmit="alert('gracias por compartirnos tus datos🌍'); return false;">
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Explora Mundo. Todos los derechos reservados.</p>
+    <div>
+      <a href="#" class="text-white me-2">Política de privacidad</a>
+      <a href="#" class="text-white">Términos de servicio</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
